@@ -16,6 +16,7 @@
 #include    <functional>
 #include    <thread>
 #include    <mutex>
+#include    <atomic>
 #include    <condition_variable>
 
 namespace   CSE160
@@ -122,7 +123,7 @@ namespace   CSE160
             ///
             /// \brief Number of workers actually processing a job.
             ///
-            std::size_t                         busy_workers_number;
+            std::atomic<std::size_t>            busy_workers_number;
 
             ///
             /// \brief The condition variable is used to tell a worker that

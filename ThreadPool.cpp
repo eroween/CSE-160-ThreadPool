@@ -73,13 +73,10 @@ namespace   CSE160
                 if (this->terminate == true) break;
                 job = this->jobs.front();
                 this->jobs.pop();
-                this->busy_workers_number += 1;
             }
+            this->busy_workers_number += 1;
             job();
-            {
-                std::lock_guard<std::mutex>     lock(this->mutex);
-                this->busy_workers_number -= 1;
-            }
+            this->busy_workers_number -= 1;
             this->job_finished.notify_all();
         }
     }
