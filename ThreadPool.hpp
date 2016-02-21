@@ -1,15 +1,21 @@
-///
-/// \file ThreadPool.hpp
-///
-/// \author Martin-Pierrat Louis (mart_p)
-///
-/// \date Mon, 18 Jan 2016 15:10:49
-///
-/// \version 2.2.18
-///
+//
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 3 of the License, or
+// any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License along
+// with this program; If not, see <http://www.gnu.org/licenses/>.
+//
+// Copyright (C) 2016 Martin-Pierrat Louis (louismartinpierrat@gmail.com)
+//
 
-#ifndef     __CSE_160_THREAD_POOL_HPP__
-# define    __CSE_160_THREAD_POOL_HPP__
+#pragma once
 
 #include    <list>
 #include    <queue>
@@ -171,5 +177,3 @@ namespace   CSE160
     };
 
 }
-
-#endif /* !__CSE_160_THREAD_POOL_HPP__ */
