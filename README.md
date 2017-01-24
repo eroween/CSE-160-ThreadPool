@@ -34,6 +34,9 @@ int     main(void)
     }
     threadpool.wait_unfinished_jobs();
     std::cout << thread_ids << std::endl;
-    std::cin.ignore();
 }
 ```
+
+expected output :
+
+[4636][5848][5848][5848][4636][5848][4636][3224][4636] ... [5848][5796][3224][5848][5796][3224][5848][5796][3224][5848][5796][3224]
