@@ -13,7 +13,7 @@ This is a simple generic threadpool in c++.
 
 std::ostream &operator<<(std::ostream &os, const std::vector<std::thread::id> &thread_ids)
 {
-    for (auto thread_id : thread_ids)
+    for (const auto &thread_id : thread_ids)
     {
         os << "[" << thread_id << "]";
     }
@@ -37,6 +37,6 @@ int     main(void)
 }
 ```
 
-expected output :
+possible output :
 
 [4636][5848][5848][5848][4636][5848][4636][3224][4636] ... [5848][5796][3224][5848][5796][3224][5848][5796][3224][5848][5796][3224]
